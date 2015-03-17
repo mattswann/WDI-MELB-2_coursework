@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fizz BUG</title>
+</head>
+<body>
+
+<h1 id="head">FIZZ & BUGZ</h1>
+
+<br />
+
+<ul id="print"> <ul>
+	
+</body>
+
+<script>
+	
+	var print = document.getElementById('print');
+	var output = "";
+
+		for (i = 1; i <= 101; i++) {
+			output += "<li>";
+
+		if ((i % 3 === 0) && (i % 5 === 0)) {
+        output += "FIZZYBUGS";
+    }  else if (i % 3 === 0) {
+        output += "FRITZ";
+    }
+    else if (i % 5 === 0) {
+        output += "PUGZ";
+    }
+    else {
+        output += i;
+    }
+    output += "</li>";
+
+}
+
+print.innerHTML += output;
+
+</script>
+
+
+</html>
